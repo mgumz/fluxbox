@@ -17,3 +17,28 @@ style_DATA = \
 	data/styles/qnx-photon
 
 EXTRA_DIST += $(style_DATA)
+
+uninstall-hook-styles:
+	rmdir \
+		$(DESTDIR)$(arch_pixmaps_styledir) \
+		$(DESTDIR)$(bloe_pixmaps_styledir) \
+		$(DESTDIR)$(blueflux_pixmaps_styledir) \
+		$(DESTDIR)$(emerge_pixmaps_styledir) \
+		\
+		$(DESTDIR)$(arch_styledir) \
+		$(DESTDIR)$(bloe_styledir) \
+		$(DESTDIR)$(blueflux_styledir) \
+		$(DESTDIR)$(bora_black_styledir) \
+		$(DESTDIR)$(bora_blue_styledir) \
+		$(DESTDIR)$(bora_green_styledir) \
+		$(DESTDIR)$(carp_styledir) \
+		$(DESTDIR)$(emerge_styledir) \
+		$(DESTDIR)$(green_tea_styledir) \
+		$(DESTDIR)$(ostrich_styledir) \
+		$(DESTDIR)$(zimek_bisque_styledir) \
+		$(DESTDIR)$(zimek_darkblue_styledir) \
+		$(DESTDIR)$(zimek_green_styledir) \
+		\
+		$(DESTDIR)$(styledir)
+
+UNINSTALL_HOOKS += uninstall-hook-styles

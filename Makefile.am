@@ -58,6 +58,7 @@ edit_cmd = sed \
 PATHFILES =
 CLEANFILES += $(PATHFILES)
 EXTRA_DIST += $(PATHFILES:=.in)
+UNINSTALL_HOOKS =
 
 $(PATHFILES): Makefile
 	@ rm -f $@ $@.tmp

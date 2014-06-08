@@ -1,6 +1,6 @@
-pixmaps_styledir = $(pkgdatadir)/styles/bloe/pixmaps
+bloe_pixmaps_styledir = $(pkgdatadir)/styles/bloe/pixmaps
 
-dist_pixmaps_style_DATA = \
+dist_bloe_pixmaps_style_DATA = \
 	data/styles/bloe/pixmaps/bullet.xpm \
 	data/styles/bloe/pixmaps/closefcs.xpm \
 	data/styles/bloe/pixmaps/closepr.xpm \
