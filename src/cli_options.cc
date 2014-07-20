@@ -20,7 +20,6 @@
 // DEALINGS IN THE SOFTWARE.
 
 #include "cli.hh"
-#include "version.h"
 #include "defaults.hh"
 #include "Debug.hh"
 
@@ -109,7 +108,7 @@ int FluxboxCli::Options::parse(int argc, char** argv) {
             }
         } else if (arg == "-version" || arg == "-v" || arg == "--version") {
             // print current version string
-            cout << "Fluxbox " << __fluxbox_version << " : (c) 2001-2014 Fluxbox Team " 
+            cout << "Fluxbox " << PACKAGE_VERSION << " : (c) 2001-2014 Fluxbox Team " 
                 << endl << endl;
             return EXIT_SUCCESS;
         } else if (arg == "-log" || arg == "--log") {
@@ -137,7 +136,7 @@ int FluxboxCli::Options::parse(int argc, char** argv) {
                            "-help\t\t\t\tdisplay this help text and exit.\n\n",
 
                            "Main usage string. Please lay it out nicely. There is one %s that is given the version").c_str(),
-                   __fluxbox_version, "2001-2014");
+                   PACKAGE_VERSION, "2001-2014");
             return EXIT_SUCCESS;
         } else if (arg == "-info" || arg == "-i" || arg == "--info") {
             FluxboxCli::showInfo(cout);

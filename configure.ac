@@ -549,7 +549,6 @@ AC_CONFIG_HEADER([config.h])
 
 AC_OUTPUT([
 Makefile
-version.h
 nls/C/Makefile
 nls/be_BY/Makefile
 nls/bg_BG/Makefile

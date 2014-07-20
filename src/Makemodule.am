@@ -267,6 +267,7 @@ fluxbox_SOURCES = \
 	src/cli_cfiles.cc \
 	src/cli_options.cc \
 	src/cli_info.cc \
+	src/compiler_version.hh \
 	${EWMH_SOURCE} \
 	${REMEMBER_SOURCE} \
 	${SLIT_SOURCE} \

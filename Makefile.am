@@ -75,7 +75,7 @@ include src/tests/Makemodule.am
 include util/Makemodule.am
 include util/fbrun/Makemodule.am
 
-uninstall-hook:
+uninstall-hook: $(UNINSTALL_HOOKS)
 	rmdir $(DESTDIR)$(pkgdatadir)
 
 source-doc:

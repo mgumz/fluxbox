@@ -21,10 +21,15 @@
 // DEALINGS IN THE SOFTWARE.
 
 #include "fluxbox.hh"
-#include "version.h"
+
 #include "defaults.hh"
+#include "Debug.hh"
 #include "cli.hh"
 
+#include "FbTk/Theme.hh"
+#include "FbTk/CommandParser.hh"
+#include "FbTk/FileUtil.hh"
+#include "FbTk/StringUtil.hh"
 #include "FbTk/I18n.hh"
 #include "FbTk/StringUtil.hh"
 

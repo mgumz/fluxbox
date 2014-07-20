@@ -21,7 +21,7 @@
 
 #include "cli.hh"
 #include "defaults.hh"
-#include "version.h"
+#include "compiler_version.hh"
 
 #include "FbTk/I18n.hh"
 #include "FbTk/StringUtil.hh"
@@ -44,7 +44,7 @@ void FluxboxCli::showInfo(ostream &ostr) {
     ostr <<
         _FB_CONSOLETEXT(Common, FluxboxVersion, "Fluxbox version", "Fluxbox version heading")
         << ": " 
-        << __fluxbox_version <<endl;
+        << PACKAGE_VERSION <<endl;
 
     if (strlen(gitrevision()) > 0)
         ostr << _FB_CONSOLETEXT(Common, SvnRevision, "GIT Revision", "Revision number in GIT repositary") 
